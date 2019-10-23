@@ -3,7 +3,9 @@ package com.vulenhtho.model.request;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -15,7 +17,8 @@ public class UserRequest {
     private String email;
     private String phone;
     private boolean sex;
-    private List<Long> ids;
+    private boolean status;
+    private Set<RoleRequest> roles = new HashSet<>();
 
 
 }

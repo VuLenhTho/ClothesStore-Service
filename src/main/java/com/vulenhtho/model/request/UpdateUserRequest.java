@@ -18,5 +18,6 @@ public class UpdateUserRequest {
     private String phone;
     private String email;
     private boolean sex;
+    private boolean status;
     private Set<RoleRequest> roles = new HashSet<>();
 }

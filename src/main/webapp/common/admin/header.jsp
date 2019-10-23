@@ -38,7 +38,7 @@
                     <div class="drop-down dropdown-profile animated bounceInDown">
                         <div class="dropdown-content-body">
                             <ul>
-                                <li><a href="#"><i class="icon-power"></i> <span>Logout</span></a>
+                                <li><a href="/logout"><i class="icon-power"></i> <span>Logout</span></a>
                                 </li>
                             </ul>
                         </div>

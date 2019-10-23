@@ -4,6 +4,7 @@ import com.vulenhtho.model.request.RoleRequest;
 import com.vulenhtho.model.request.UserRequestApi;
 import com.vulenhtho.security.CustomUserDetail;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -21,6 +22,7 @@ public class CustomUserDetailService implements UserDetailsService {
 
     private RestTemplate restTemplate;
 
+    @Autowired
     public CustomUserDetailService(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }

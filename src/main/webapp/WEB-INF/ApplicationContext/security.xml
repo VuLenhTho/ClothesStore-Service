@@ -13,6 +13,7 @@
         <intercept-url pattern="/user/**" access="hasAnyRole('ROLE_ADMIN')"/>
         <intercept-url pattern="/web/**" access="permitAll()"/>
 
+
         <access-denied-handler error-page="/accessDenied"/>
         <form-login login-page="/login"
                     username-parameter="userName"

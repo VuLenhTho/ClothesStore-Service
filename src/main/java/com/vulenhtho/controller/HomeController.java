@@ -6,6 +6,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -32,9 +33,18 @@ public class HomeController {
         return new ModelAndView("web");
     }
 
+
     @GetMapping("/login")
     public ModelAndView login() {
         return new ModelAndView("login");
+    }
+
+    @GetMapping("/accessDenied")
+    public ModelAndView accessDenied() {
+        ModelAndView modelAndView= new ModelAndView("login");
+        String mess = "Bạn không đủ quyền truy cập vào trang này, hãy đăng nhập với tài khoản hợp lệ!";
+        modelAndView.addObject("mess",mess);
+        return modelAndView;
     }
 
 
@@ -54,7 +64,6 @@ public class HomeController {
         if (authentication != null) {
             new SecurityContextLogoutHandler().logout(request, response, authentication);
         }
-
         return "redirect:/login";
     }
 
