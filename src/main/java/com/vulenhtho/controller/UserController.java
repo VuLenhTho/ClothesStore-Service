@@ -41,6 +41,7 @@ public class UserController {
         if (status != null && !status.equals("all")) url += "&status=" + status;
         if (sort != null && !sort.equals("all")) url += "&sort=" + sort;
         if (search != null && search.length()>0) url += "&search=" + search;
+
         UserFilterRequest users = restTemplate.getForObject(url, UserFilterRequest.class);
         mav.addObject("data", users);
         UserFilterResponse userFilterResponse = new UserFilterResponse(sort, search, status, sex);

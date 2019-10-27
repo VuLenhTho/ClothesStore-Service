@@ -148,7 +148,6 @@
                                         <th scope="col">Điện thoại</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">Giới tính</th>
-                                        <%--<th scope="col">Quyền</th>--%>
                                         <th scope="col">Trạng thái</th>
                                         <th scope="col" align="center" style="align-items: center;align-content: center">
                                             Cập nhật hoặc

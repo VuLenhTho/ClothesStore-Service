@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <div class="header">
     <div class="nav-header">
-        <div class="brand-logo"><a href="#"><b><img src="<c:url value="/template/assets/images/logo.png"/>" alt=""> </b><span class="brand-title"><img src="../../assets/images/logo-text.png" alt=""></span></a>
+        <div class="brand-logo"><a href="#"><b><img src="<c:url value="/template/assets/images/logo.png"/>" alt=""> </b><span class="brand-title"><img src="<c:url value="/template/assets/images/logo-text.png"/>" alt=""></span></a>
         </div>
         <div class="nav-control">
             <div class="hamburger"><span class="line"></span>  <span class="line"></span>  <span class="line"></span>
@@ -32,8 +32,9 @@
         <div class="header-right">
             <ul>
                 <li class="icons">
-                    Xin chào <%=SecurityUtil.getUserName()%>
+                    Xin chào <span id="creator"><%=SecurityUtil.getUserName()%></span>
                 </li>
+
                 <li class="icons"><a href="javascript:void(0)"><i class="mdi mdi-account f-s-20" aria-hidden="true"></i></a>
                     <div class="drop-down dropdown-profile animated bounceInDown">
                         <div class="dropdown-content-body">

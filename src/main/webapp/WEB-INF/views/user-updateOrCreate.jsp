@@ -71,7 +71,6 @@
                                                    maxlength="20" name="password" placeholder="Enter a Password..">
                                         </div>
                                     </div>
-                                    <c:if test="${user==null}">
                                         <div class="form-group row">
                                             <label class="col-lg-4 col-form-label" for="val-username"> Xác nhận mật khẩu
                                                 <span
@@ -83,7 +82,6 @@
                                                        placeholder="Confirm Password..">
                                             </div>
                                         </div>
-                                    </c:if>
                                     <div class="form-group row">
                                         <label class="col-lg-4 col-form-label" for="val-username">Họ tên <span
                                                 class="text-danger">*</span>
@@ -291,6 +289,7 @@
             return;
         }
         data["ids"] = roleIds;
+        data["creator"] = document.getElementById("creator").innerText;
 
         var id = $('#id').val();
         if (id === '') {
@@ -303,10 +302,7 @@
 
     function checkValid() {
         var pass = document.getElementById("Password");
-        var confirmPass = pass;
-        if (${user == null}) {
-            confirmPass = document.getElementById("ConfirmPassword");
-        }
+        var confirmPass = document.getElementById("ConfirmPassword");
         var email = document.getElementById('email');
         var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         var user = document.getElementById("val-username");
