@@ -21,7 +21,7 @@
                     login-processing-url="/j_spring_security_check"
                     authentication-success-handler-ref="customSuccessHandler"
                     authentication-failure-url="/login"/>
-        <session-management invalid-session-url="/login"/>
+        <session-management invalid-session-url="/web"/>
         <logout delete-cookies="JSESSIONID"/>
     </http>
 

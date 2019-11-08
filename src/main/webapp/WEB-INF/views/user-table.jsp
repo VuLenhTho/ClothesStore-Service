@@ -223,6 +223,7 @@
 <script src="<c:url value="/template/paging/jquery.twbsPagination.min.js"/>"></script>
 
 <script type="text/javascript">
+
     var totalPages = ${data.totalPages};
     var currentPage = ${data.currentPage+1};
     var limit = 5;
@@ -244,6 +245,7 @@
 
     $('#btnDelete').click(function (e) {
         e.preventDefault();
+
         var data = {};
         var ids = [];
         var userId;

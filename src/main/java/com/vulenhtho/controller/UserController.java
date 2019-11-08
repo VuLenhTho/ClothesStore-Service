@@ -1,6 +1,7 @@
 package com.vulenhtho.controller;
 
 
+import com.vulenhtho.model.request.ProductWebRequest;
 import com.vulenhtho.model.request.RoleRequest;
 import com.vulenhtho.model.request.UpdateUserRequest;
 import com.vulenhtho.model.request.UserFilterRequest;
@@ -46,7 +47,6 @@ public class UserController {
         mav.addObject("data", users);
         UserFilterResponse userFilterResponse = new UserFilterResponse(sort, search, status, sex);
         mav.addObject("filter", userFilterResponse);
-
         return mav;
     }
 
@@ -58,6 +58,7 @@ public class UserController {
         List<RoleRequest> roleRequests = restTemplate.getForObject("http://localhost:8888/roles", List.class);
         mav.addObject("roles", roleRequests);
         mav.addObject("user", user);
+
 
         return mav;
     }

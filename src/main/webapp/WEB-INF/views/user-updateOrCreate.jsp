@@ -106,7 +106,7 @@
                                                 class="text-danger">*</span>
                                         </label>
                                         <div class="col-lg-6">
-                                            <input type="text" class="form-control" id="phone" name="phone"
+                                            <input type="number" class="form-control" id="phone" name="phone"
                                                    maxlength="15" placeholder="Enter a Phone.." value="${user.phone}">
                                         </div>
                                     </div>
@@ -271,6 +271,7 @@
 <script>
     $('#btnAddOrUpdate').click(function (e) {
         e.preventDefault();
+
         if (!checkValid()) return;
 
         var data = {};

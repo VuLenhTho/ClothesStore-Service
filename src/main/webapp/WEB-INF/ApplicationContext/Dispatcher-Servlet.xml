@@ -18,4 +18,5 @@
     </bean>
 
     <mvc:resources mapping="/template/**" location="/template/"/>
+    <mvc:resources mapping="/shoptemplate/**" location="/shoptemplate/"/>
 </beans>
