@@ -22,11 +22,6 @@ public class HomeController {
         this.restTemplate = restTemplate;
     }
 
-    @GetMapping("/web")
-    public ModelAndView webHome() {
-        return new ModelAndView("home");
-    }
-
     @GetMapping("/admin/home")
     public ModelAndView home() {
         return new ModelAndView("home-admin");

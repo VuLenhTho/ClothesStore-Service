@@ -1,8 +1,6 @@
 package com.vulenhtho.controller;
 
-import com.vulenhtho.model.request.ProductColorSizeRequest;
-import com.vulenhtho.model.request.ProductWebRequest;
-import com.vulenhtho.model.request.RoleRequest;
+import com.vulenhtho.model.request.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Controller
 public class ProductController {
@@ -21,6 +20,27 @@ public class ProductController {
         this.restTemplate = restTemplate;
     }
 
+
+    @GetMapping("/web")
+    public ModelAndView webHome() {
+        ModelAndView modelAndView = new ModelAndView("home");
+
+        BriefProductFilterWebRequest trendProducts = restTemplate.getForObject("http://localhost:8888/web/products?page=0&size=8&sort=date-des&trend=true", BriefProductFilterWebRequest.class);
+        BriefProductFilterWebRequest bestSaleProducts = restTemplate.getForObject("http://localhost:8888/web/products?page=0&size=8&sort=hot-des", BriefProductFilterWebRequest.class);
+        for (BriefProductWebRequest p : trendProducts.getProducts()) {
+            p.setPrice(countPrice(p.getDiscount(),p.getPrice()));
+        }
+        for (BriefProductWebRequest p : bestSaleProducts.getProducts()) {
+            p.setPrice(countPrice(p.getDiscount(),p.getPrice()));
+        }
+
+        modelAndView.addObject("trendProducts",trendProducts.getProducts());
+        modelAndView.addObject("bestSaleProducts",bestSaleProducts.getProducts());
+
+        return modelAndView;
+    }
+
+
     @GetMapping("/web/products")
     public ModelAndView webProducts(@RequestParam(required = false) String category) {
         return new ModelAndView("product-list");
@@ -29,33 +49,63 @@ public class ProductController {
     @GetMapping("/web/product/{id}")
     public ModelAndView webProductDetail(@PathVariable String id) {
         ModelAndView modelAndView = new ModelAndView("product-detail");
-        ProductWebRequest productWebRequest = restTemplate.getForObject("http://localhost:8888/web/product/"+id, ProductWebRequest.class);
+        ProductWebRequest productWebRequest = restTemplate.getForObject("http://localhost:8888/web/product/" + id, ProductWebRequest.class);
         modelAndView.addObject("product", productWebRequest);
+        modelAndView.addObject("newPrice",countPrice(productWebRequest.getDiscounts(),productWebRequest.getPrice()));
+        setSizeColorAmount(modelAndView, productWebRequest.getProductColorSizes());
+        setPhotoList(modelAndView, productWebRequest.getPhotoList());
+        setSameProduct(modelAndView,productWebRequest.getCategory().getId());
+        return modelAndView;
+    }
+
+    private void setSizeColorAmount(ModelAndView modelAndView, Set<ProductColorSizeRequest> productColorSizeRequests) {
         List<Long> sizes = new ArrayList<>();
         List<Long> colors = new ArrayList<>();
         List<Long> amounts = new ArrayList<>();
-        for (ProductColorSizeRequest p : productWebRequest.getProductColorSizes()) {
+        for (ProductColorSizeRequest p : productColorSizeRequests) {
             sizes.add(p.getSizeId());
             colors.add(p.getColorId());
             amounts.add(p.getAmount());
         }
-        modelAndView.addObject("sizes",sizes);
-        modelAndView.addObject("colors",colors);
-        modelAndView.addObject("amounts",amounts);
+        modelAndView.addObject("sizes", sizes);
+        modelAndView.addObject("colors", colors);
+        modelAndView.addObject("amounts", amounts);
 
-        String[] photoList = productWebRequest.getPhotoList().split(",");
+    }
+
+    private void setPhotoList(ModelAndView modelAndView, String photos) {
+        String[] photoList = photos.split(",");
         List<String> bigImg = new ArrayList<>();
         List<String> smImg = new ArrayList<>();
         for (int i = 0; i < photoList.length; i++) {
-            if (i%2 == 0){
+            if (i % 2 == 0) {
                 bigImg.add(photoList[i]);
-            }else {
+            } else {
                 smImg.add(photoList[i]);
             }
         }
-        modelAndView.addObject("bigImg",bigImg);
-        modelAndView.addObject("smImg",smImg);
-        return modelAndView;
+        modelAndView.addObject("bigImg", bigImg);
+        modelAndView.addObject("smImg", smImg);
     }
 
+    private Long countPrice(Set<DiscountRequest> discountRequests, Long price){
+        Long discountMoney = 0L;
+        Long percent = 0L;
+        if (discountRequests != null){
+            for (DiscountRequest d : discountRequests) {
+                discountMoney += d.getAmount();
+                percent += d.getPercent();
+            }
+        }
+        return price - discountMoney - Math.round(price * ((float)percent / 100));
+    }
+
+    private void setSameProduct(ModelAndView modelAndView, Long categoryId){
+        String id = String.valueOf(categoryId);
+        BriefProductFilterWebRequest request = restTemplate.getForObject("http://localhost:8888/web/products?page=0&size=7&sort=date-des&categoryId="+ id, BriefProductFilterWebRequest.class);
+        for (BriefProductWebRequest p : request.getProducts()) {
+            p.setPrice(countPrice(p.getDiscount(),p.getPrice()));
+        }
+        modelAndView.addObject("briefProducts",request.getProducts());
+    }
 }

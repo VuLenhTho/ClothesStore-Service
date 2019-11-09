@@ -21,7 +21,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Thời trang thu đông <br>Snow Queen</strong></h1>
+                            <h1 class="m-b-20"><strong>Thời trang thu đông <br>SnowQueen</strong></h1>
                             <p class="m-b-40">Sản phẩm mới 2019</p>
                             <p><a class="btn hvr-hover" href="#">Xem ngay</a></p>
                         </div>
@@ -82,99 +82,58 @@
             </div>
 
             <div class="row special-list">
-
-                <div class="col-lg-3 col-md-6 special-grid best-seller">
-                    <a href="#">
-                        <div class="products-single fix">
-                            <div class="box-img-hover">
-                                <div class="type-lb">
-                                    <p class="sale">Sale</p>
+                <c:forEach items="${trendProducts}" var="trend">
+                    <div class="col-lg-3 col-md-6 special-grid top-featured">
+                        <a href="/web/product/${trend.id}">
+                            <div class="products-single fix">
+                                <div class="box-img-hover">
+                                    <c:if test="${trend.discount.size()>0}">
+                                        <div class="type-lb">
+                                            <p class="sale">Sale</p>
+                                        </div>
+                                    </c:if>
+                                    <c:if test="${trend.discount.size()<1}">
+                                        <div class="type-lb">
+                                            <p class="new">Mới</p>
+                                        </div>
+                                    </c:if>
+                                    <img src="${trend.thumbnail}" class="img-fluid"
+                                         alt="Image">
                                 </div>
-                                <img src="<c:url value="/shoptemplate/images/img-pro-01.jpg"/>" class="img-fluid"
-                                     alt="Image">
-                            </div>
 
-                            <div class="why-text">
-                                <h4>Lorem ipsum dolor sit amet</h4>
-                                <h5>$9.79</h5>
-                            </div>
-
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-3 col-md-6 special-grid top-featured">
-                    <a href="#">
-                        <div class="products-single fix">
-                            <div class="box-img-hover">
-                                <div class="type-lb">
-                                    <p class="new">New</p>
+                                <div class="why-text">
+                                    <h4>${trend.name}</h4>
+                                    <h5>${trend.price}</h5>
                                 </div>
-                                <img src="<c:url value="/shoptemplate/images/img-pro-02.jpg"/>" class="img-fluid"
-                                     alt="Image">
-                            </div>
 
-                            <div class="why-text">
-                                <h4>Lorem ipsum dolor sit amet</h4>
-                                <h5> $9.79</h5>
                             </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-lg-3 col-md-6 special-grid top-featured">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">
-                            <div class="type-lb">
-                                <p class="sale">Sale</p>
-                            </div>
-                            <img src="<c:url value="/shoptemplate/images/img-pro-03.jpg"/>" class="img-fluid"
-                                 alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i
-                                            class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i
-                                            class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right"
-                                           title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>
-                                <a class="cart" href="#">Add to Cart</a>
-                            </div>
-                        </div>
-                        <div class="why-text">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                            <h5> $10.79</h5>
-                        </div>
+                        </a>
                     </div>
-                </div>
+                </c:forEach>
 
-                <div class="col-lg-3 col-md-6 special-grid best-seller">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">
-                            <div class="type-lb">
-                                <p class="sale">Sale</p>
+                <c:forEach items="${bestSaleProducts}" var="bestSale">
+                    <div class="col-lg-3 col-md-6 special-grid best-seller">
+                        <a href="/web/product/${bestSale.id}">
+                            <div class="products-single fix">
+                                <div class="box-img-hover">
+                                    <c:if test="${bestSale.discount.size()>0}">
+                                        <div class="type-lb">
+                                            <p class="sale">Sale</p>
+                                        </div>
+                                    </c:if>
+                                    <img src="${bestSale.thumbnail}" class="img-fluid"
+                                         alt="Image">
+                                </div>
+
+                                <div class="why-text">
+                                    <h4>${bestSale.name}</h4>
+                                    <h5>${bestSale.price}</h5>
+                                </div>
+
                             </div>
-                            <img src="<c:url value="/shoptemplate/images/img-pro-04.jpg"/>" class="img-fluid"
-                                 alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i
-                                            class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i
-                                            class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right"
-                                           title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>
-                                <a class="cart" href="#">Add to Cart</a>
-                            </div>
-                        </div>
-                        <div class="why-text">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                            <h5> $15.79</h5>
-                        </div>
+                        </a>
                     </div>
-                </div>
+                </c:forEach>
             </div>
         </div>
     </div>

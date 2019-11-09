@@ -9,127 +9,14 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user-updateOrCreate.jsp" line="142" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="782f488b-b5ec-48a5-aedd-29051305689e" name="Default" comment="detail product">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/CategoryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/ColorRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/DiscountRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/ProductColorSizeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/ProductWebRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/SizeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home-admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product-detail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product-list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/web/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/web/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/web/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/web/instaggram-box.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/baguetteBox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/bootsnav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/bootstrap-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/carousel-ticker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/code_animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/css/superslides.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/about-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/all-bg-title.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/banner-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/banner-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/banner-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/big-img-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/big-img-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/big-img-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/blog-img-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/blog-img-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/blog-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/img-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/img-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/img-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/img-pro-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/img-pro-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/img-pro-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/img-pro-04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/ins-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/instagram-img-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/instagram-img-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/instagram-img-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/instagram-img-04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/instagram-img-05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/instagram-img-06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/instagram-img-07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/instagram-img-08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/instagram-img-09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/payment-icon/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/payment-icon/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/payment-icon/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/payment-icon/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/payment-icon/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/shirt-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/shoes-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/smp-img-01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/smp-img-02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/smp-img-03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/t-shirts-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/wallet-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/women-bag-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/images/women-shoes-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/baguetteBox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/bootsnav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/bootstrap-select.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/contact-form-script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/form-validator.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/images-loded.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/inewsticker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/isotope.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/jquery.nicescroll.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/jquery.superslides.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/php/form-process.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shoptemplate/webfonts/fa-solid-900.woff2" afterDir="false" />
+    <list default="true" id="782f488b-b5ec-48a5-aedd-29051305689e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/BriefProductFilterWebRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ApplicationContext/Dispatcher-Servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ApplicationContext/Dispatcher-Servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ApplicationContext/security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/ApplicationContext/security.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/BriefProductWebRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/BriefProductWebRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user-table.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user-table.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user-updateOrCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user-updateOrCreate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/vulenhtho/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/vulenhtho/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/vulenhtho/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/vulenhtho/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/vulenhtho/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/vulenhtho/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product-detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product-detail.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -156,33 +43,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="product-detail.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product-detail.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product-detail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1154">
-              <caret line="167" column="20" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
+            <state relative-caret-position="231">
+              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
               <folding>
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/ProductController.java">
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+            <state relative-caret-position="503">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+              <folding>
+                <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
+                <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductWebRequest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/ProductWebRequest.java">
+      <file leaf-file-name="BriefProductWebRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/BriefProductWebRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="367">
+              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="104" column="109" selection-start-line="104" selection-start-column="109" selection-end-line="104" selection-end-column="109" />
+              <folding>
+                <element signature="method#webProductDetail#0;class#ProductController#0" />
+                <element signature="method#setSizeColorAmount#0;class#ProductController#0" />
+                <element signature="method#setPhotoList#0;class#ProductController#0" />
+                <element signature="method#countPrice#0;class#ProductController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BriefProductFilterWebRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/BriefProductFilterWebRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductColorSizeRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/ProductColorSizeRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,8 +141,8 @@
       <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/common/web/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+            <state relative-caret-position="192">
+              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -223,8 +162,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -236,6 +175,7 @@
       <find>sea</find>
       <find>shor</find>
       <find>text</find>
+      <find>snow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -273,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/common/web/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/common/web/instaggram-box.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product-list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/CategoryRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/SubCategoryRequest.java" />
@@ -285,13 +224,16 @@
         <option value="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tesss.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user-table.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user-updateOrCreate.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/common/web/head.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/common/web/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/BriefProductFilterWebRequest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product-detail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/BriefProductWebRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
       </list>
     </option>
   </component>
@@ -315,6 +257,17 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="clothes-mvc" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
@@ -332,9 +285,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -487,12 +437,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clothes-boot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
@@ -709,7 +662,9 @@
       <workItem from="1573156488703" duration="3223000" />
       <workItem from="1573160034730" duration="308000" />
       <workItem from="1573185265698" duration="4829000" />
-      <workItem from="1573199094335" duration="2400000" />
+      <workItem from="1573199094335" duration="7867000" />
+      <workItem from="1573223267122" duration="3507000" />
+      <workItem from="1573268831750" duration="7340000" />
     </task>
     <task id="LOCAL-00001" summary="finish page user">
       <created>1571822806356</created>
@@ -732,11 +687,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572151827409</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="detail product">
+      <created>1573201774371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573201774371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224314000" />
+    <option name="totallyTimeSpent" value="240628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -745,15 +707,15 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32960895" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3295302" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.14285715" />
+      <window_info anchor="right" id="Database" order="3" weight="0.14228188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5670103" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5655376" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32842416" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -761,10 +723,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38291606" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38291606" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.15865922" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49907234" visible="true" weight="0.19261745" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49907234" visible="true" weight="0.19798657" />
       <window_info id="Web" order="2" sideWeight="0.5009276" side_tool="true" weight="0.15191898" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -823,20 +785,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="35" />
+      <option name="time" value="39" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/shoptemplate/js/jquery.superslides.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/shoptemplate/js/jquery-3.2.1.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -886,23 +838,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/SubCategoryRequest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/ProductColorSizeRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/SizeRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -917,6 +852,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -957,13 +895,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/shoptemplate/css/all.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/CategoryRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/shoptemplate/css/bootsnav.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -1029,13 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -1092,34 +1016,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/web/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/shoptemplate/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="5" column="103210" selection-start-line="5" selection-start-column="103210" selection-end-line="5" selection-end-column="103210" />
-          <folding>
-            <element signature="e#58441#58641#2" expanded="true" />
-            <element signature="e#58849#58998#2" expanded="true" />
-            <element signature="e#59500#59646#2" expanded="true" />
-            <element signature="e#59947#60113#1" expanded="true" />
-            <element signature="e#70793#71036#2" expanded="true" />
-            <element signature="e#71903#72152#2" expanded="true" />
-            <element signature="e#98915#99105#2" expanded="true" />
-            <element signature="e#99151#99341#2" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/CategoryRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/ProductWebRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="210">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/ProductColorSizeRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product-detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/BriefProductFilterWebRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/web/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
+            <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/model/request/BriefProductWebRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1128,18 +1108,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/vulenhtho/controller/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/product-detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1154">
-          <caret line="167" column="20" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
+        <state relative-caret-position="165">
+          <caret line="104" column="109" selection-start-line="104" selection-start-column="109" selection-end-line="104" selection-end-column="109" />
           <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="method#webProductDetail#0;class#ProductController#0" />
+            <element signature="method#setSizeColorAmount#0;class#ProductController#0" />
+            <element signature="method#setPhotoList#0;class#ProductController#0" />
+            <element signature="method#countPrice#0;class#ProductController#0" />
           </folding>
         </state>
       </provider>

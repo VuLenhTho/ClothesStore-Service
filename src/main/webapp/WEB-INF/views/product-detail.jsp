@@ -14,15 +14,15 @@
 <%@include file="/common/web/header.jsp" %>
 
 <!-- Start All Title Box -->
-<div class="all-title-box">
+<div class="all-title-box" style="font-family: Helvetica">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Shop Detail</h2>
+                <h2></h2>
                 <ul class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/web">Trang chủ</a></li>
                     <li class="breadcrumb-item"><a href="/web/products">Sản phẩm</a></li>
-                    <li class="breadcrumb-item active">Shop Detail </li>
+                    <li class="breadcrumb-item active">${product.name}</li>
                 </ul>
             </div>
         </div>
@@ -31,7 +31,7 @@
 <!-- End All Title Box -->
 
 <!-- Start Shop Detail  -->
-<div class="shop-detail-box-main">
+<div class="shop-detail-box-main" style="font-family: Helvetica,Arial">
     <div class="container">
         <div class="row">
             <div class="col-xl-5 col-lg-5 col-md-6">
@@ -70,9 +70,21 @@
             <div class="col-xl-7 col-lg-7 col-md-6" style="font-family: Helvetica,Arial">
                 <div class="single-product-details">
                     <h2>${product.name}</h2>
-                    <h5> ${product.price} VNĐ</h5>
-                    <h4>Mô tả sản phẩm:</h4>
-                    <p>${product.shortDescription}</p>
+                    <c:if test="${newPrice == product.price}">
+                        <h5> ${product.price} VNĐ</h5>
+                        <h4>Mô tả sản phẩm:</h4>
+                        <p>${product.shortDescription}</p>
+                    </c:if>
+                    <c:if test="${newPrice != product.price}">
+                        <h5><del>${product.price}</del> ${newPrice} VNĐ</h5>
+                        <h4>Khuyến mại:</h4>
+                        <c:forEach items="${product.discounts}" var="discount">
+                            <p>- ${discount.content}</p>
+                        </c:forEach>
+                        <h4>Mô tả sản phẩm:</h4>
+                        <p>${product.shortDescription}</p>
+                    </c:if>
+
                     <ul>
                         <li>
                             <div class="form-group size-st">
@@ -120,51 +132,29 @@
                 </div>
             </div>
         </div>
-
+        <br>
+        <br>
         <div class="row my-5">
             <div class="col-lg-12">
                 <div class="title-all text-center">
                     <h1>Sản phẩm tương tự</h1>
                 </div>
                 <div class="featured-products-box owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="products-single fix">
-                            <div class="box-img-hover">
-                                <img src="<c:url value="/shoptemplate/images/img-pro-01.jpg"/>" class="img-fluid" alt="Image">
-                                <div class="mask-icon">
-                                    <ul>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                    </ul>
-                                    <a class="cart" href="#">Add to Cart</a>
+                    <c:forEach items="${briefProducts}" var="product">
+                        <a href="/web/product/${product.id}">
+                            <div class="item">
+                                <div class="products-single fix">
+                                    <div class="box-img-hover">
+                                        <img src="${product.thumbnail}" class="img-fluid" alt="Image">
+                                    </div>
+                                    <div class="why-text">
+                                        <h4>${product.name}</h4>
+                                        <h5>${product.price} VNĐ</h5>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="why-text">
-                                <h4>Lorem ipsum dolor sit amet</h4>
-                                <h5> $9.79</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="products-single fix">
-                            <div class="box-img-hover">
-                                <img src="<c:url value="/shoptemplate/images/img-pro-02.jpg"/>" class="img-fluid" alt="Image">
-                                <div class="mask-icon">
-                                    <ul>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                    </ul>
-                                    <a class="cart" href="#">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="why-text">
-                                <h4>Lorem ipsum dolor sit amet</h4>
-                                <h5> $9.79</h5>
-                            </div>
-                        </div>
-                    </div>
+                        </a>
+                    </c:forEach>
 
                 </div>
             </div>
