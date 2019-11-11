@@ -103,7 +103,13 @@
 
                                 <div class="why-text">
                                     <h4>${trend.name}</h4>
-                                    <h5>${trend.price}</h5>
+                                    <c:if test="${trend.discount.size()>0}">
+                                        <h6 style="display: inline-block">Chỉ còn:&nbsp;</h6><h5
+                                            style="color: red;display: inline-block"> ${trend.price}</h5>
+                                    </c:if>
+                                    <c:if test="${trend.discount.size()<1}">
+                                        <h5>${trend.price}</h5>
+                                    </c:if>
                                 </div>
 
                             </div>
@@ -127,8 +133,13 @@
 
                                 <div class="why-text">
                                     <h4>${bestSale.name}</h4>
-                                    <h5>${bestSale.price}</h5>
-                                </div>
+                                    <c:if test="${bestSale.discount.size()>0}">
+                                        <h6 style="display: inline-block">Chỉ còn:&nbsp;</h6><h5
+                                            style="color: red;display: inline-block"> ${bestSale.price}</h5>
+                                    </c:if>
+                                    <c:if test="${bestSale.discount.size()<1}">
+                                        <h5>${bestSale.price}</h5>
+                                    </c:if>                                </div>
 
                             </div>
                         </a>

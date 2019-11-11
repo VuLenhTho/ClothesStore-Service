@@ -149,7 +149,13 @@
                                     </div>
                                     <div class="why-text">
                                         <h4>${product.name}</h4>
-                                        <h5>${product.price} VNĐ</h5>
+                                        <c:if test="${product.discount.size()>0}">
+                                            <h6 style="display: inline-block">Chỉ còn:&nbsp;</h6><h5
+                                                style="color: red;display: inline-block"> ${product.price}</h5>
+                                        </c:if>
+                                        <c:if test="${product.discount.size()<1}">
+                                            <h5>${product.price}</h5>
+                                        </c:if>
                                     </div>
                                 </div>
                             </div>

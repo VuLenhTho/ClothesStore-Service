@@ -69,53 +69,42 @@
                         <ul class="dropdown-menu megamenu-content" role="menu">
                             <li>
                                 <div class="row">
-                                    <div class="col-menu col-md-3">
-                                        <h6 class="title">Top</h6>
+                                    <div class="col-menu col-md-6">
+                                        <h6 class="title">Nam</h6>
                                         <div class="content">
-                                            <ul class="menu-col">
-                                                <li><a href="/web/products">Jackets</a></li>
-                                                <li><a href="/web/products">Shirts</a></li>
-                                                <li><a href="shop.html">Sweaters & Cardigans</a></li>
-                                                <li><a href="shop.html">T-shirts</a></li>
+                                            <ul class="menu-col" style="display: inline-block">
+                                                <li><a href="/web/products?categoryId=1&sex=men">Áo phông</a></li>
+                                                <li><a href="/web/products?categoryId=7&sex=men">Áo sơ mi</a></li>
+                                                <li><a href="/web/products?categoryId=3&sex=men">Quần jean</a></li>
+                                            </ul>
+                                           <p style="display: inline-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                            <ul class="menu-col" style="display: inline-block">
+                                                <li><a href="/web/products?categoryId=2&sex=men">Áo khoác</a></li>
+                                                <li><a href="/web/products?categoryId=5&sex=men">Hoodie</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- end col-3 -->
+                                    <div class="col-menu col-md-6" >
+                                        <h6 class="title">Nữ</h6>
+                                        <div class="content">
+                                            <ul class="menu-col" style="display: inline-block">
+                                                <li><a href="/web/products?categoryId=1&sex=women">Áo phông</a></li>
+                                                <li><a href="/web/products?categoryId=2&sex=women">Áo khoác</a></li>
+                                                <li><a href="/web/products?categoryId=3&sex=women">Quần jean</a></li>
+                                            </ul>
+                                            <p style="display: inline-block">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+                                            <ul class="menu-col" style="display: inline-block">
+                                                <li><a href="/web/products?categoryId=5&sex=women">Hoodie</a></li>
+                                                <li><a href="/web/products?categoryId=6&sex=women">Chân váy</a></li>
+                                                <li><a href="/web/products?categoryId=4&sex=women">Váy</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <!-- end col-3 -->
-                                    <div class="col-menu col-md-3">
-                                        <h6 class="title">Bottom</h6>
-                                        <div class="content">
-                                            <ul class="menu-col">
-                                                <li><a href="shop.html">Swimwear</a></li>
-                                                <li><a href="shop.html">Skirts</a></li>
-                                                <li><a href="shop.html">Jeans</a></li>
-                                                <li><a href="shop.html">Trousers</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- end col-3 -->
-                                    <div class="col-menu col-md-3">
-                                        <h6 class="title">Clothing</h6>
-                                        <div class="content">
-                                            <ul class="menu-col">
-                                                <li><a href="shop.html">Top Wear</a></li>
-                                                <li><a href="shop.html">Party wear</a></li>
-                                                <li><a href="shop.html">Bottom Wear</a></li>
-                                                <li><a href="shop.html">Indian Wear</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-menu col-md-3">
-                                        <h6 class="title">Accessories</h6>
-                                        <div class="content">
-                                            <ul class="menu-col">
-                                                <li><a href="shop.html">Bags</a></li>
-                                                <li><a href="shop.html">Sunglasses</a></li>
-                                                <li><a href="shop.html">Fragrances</a></li>
-                                                <li><a href="shop.html">Wallets</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- end col-3 -->
+
                                 </div>
                                 <!-- end row -->
                             </li>

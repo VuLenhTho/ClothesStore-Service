@@ -1,6 +1,7 @@
 package com.vulenhtho.controller;
 
 import com.vulenhtho.model.request.*;
+import com.vulenhtho.model.response.ProductFilterWebResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -42,8 +43,35 @@ public class ProductController {
 
 
     @GetMapping("/web/products")
-    public ModelAndView webProducts(@RequestParam(required = false) String category) {
-        return new ModelAndView("product-list");
+    public ModelAndView webProducts(@RequestParam(required = false) String categoryId
+            , @RequestParam(defaultValue = "1", required = false) Integer page
+            , @RequestParam(defaultValue = "12", required = false) Integer size
+            , @RequestParam(required = false) String sex
+            , @RequestParam(required = false) String search
+            , @RequestParam(required = false,defaultValue = "date-des") String sort
+    ) {
+        ModelAndView modelAndView = new ModelAndView("product-list");
+        String pageSt = Integer.toString(page - 1);
+        String sizeSt = Integer.toString(size);
+        String url = "http://localhost:8888/web/products?page="+pageSt+"&size="+sizeSt;
+        if (categoryId != null) url += "&categoryId="+categoryId;
+        if (sex != null) url += "&sex="+sex;
+        if (search != null && search.length()>0) url+= "&search=" + search;
+        if (sort != null) {
+            url+= "&sort=" + sort;
+        }else{
+            url+= "&sort=date-des";
+        }
+        BriefProductFilterWebRequest data = restTemplate.getForObject
+                (url, BriefProductFilterWebRequest.class);
+        for (BriefProductWebRequest p : data.getProducts()) {
+            p.setPrice(countPrice(p.getDiscount(),p.getPrice()));
+        }
+        modelAndView.addObject("data",data);
+
+        ProductFilterWebResponse filterWebResponse = new ProductFilterWebResponse(search,sort,sex,categoryId);
+        modelAndView.addObject("filter",filterWebResponse);
+        return modelAndView;
     }
 
     @GetMapping("/web/product/{id}")
@@ -97,6 +125,7 @@ public class ProductController {
                 percent += d.getPercent();
             }
         }
+
         return price - discountMoney - Math.round(price * ((float)percent / 100));
     }
 
