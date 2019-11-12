@@ -6,7 +6,6 @@
 
 <head>
     <%@include file="/common/web/head.jsp" %>
-
 </head>
 
 <body>
@@ -73,9 +72,8 @@
                 <div class="col-lg-12">
                     <div class="special-menu text-center">
                         <div class="button-group filter-button-group">
-                            <button class="active" data-filter="*">Tất cả</button>
-                            <button data-filter=".best-seller">Bán chạy</button>
-                            <button data-filter=".top-featured">Xu hướng</button>
+                            <button id="btnXuHuong" class="active" data-filter=".top-featured">Xu hướng</button>
+                            <button id="btnBanChay" data-filter=".best-seller">Bán chạy</button>
                         </div>
                     </div>
                 </div>
@@ -139,7 +137,7 @@
                                     </c:if>
                                     <c:if test="${bestSale.discount.size()<1}">
                                         <h5>${bestSale.price}</h5>
-                                    </c:if>                                </div>
+                                    </c:if></div>
 
                             </div>
                         </a>
@@ -171,7 +169,12 @@
     <script src="<c:url value="/shoptemplate/js/form-validator.min.js"/>"></script>
     <script src="<c:url value="/shoptemplate/js/contact-form-script.js"/>"></script>
     <script src="<c:url value="/shoptemplate/js/custom.js"/>"></script>
-
+    <script>
+        window.onload = function () {
+            var xh = document.getElementById("btnXuHuong");
+            xh.click();
+        }
+    </script>
 </div>
 
 </body>

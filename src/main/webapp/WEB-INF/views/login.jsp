@@ -28,11 +28,11 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="logo text-center">
-                                <a href="$">
-                                    <img src="<c:url value="/template/assets/images/f-logo.png"/> " alt="">
+                                <a href="/web">
+                                    <img src="<c:url value="/shoptemplate/images/logo3.png"/> " alt="">
                                 </a>
                             </div>
-                            <h4 class="text-center m-text-15">Log into Your Account</h4>
+                            <h3 class="text-center m-text-15">Đăng nhập</h3>
                             <h5 class="text-center m-text-15" style="color: #ff5185">${mess}</h5>
                             <form:form action="/j_spring_security_check" method="post" >
                                 <div class="form-group">

@@ -54,10 +54,13 @@ public class ProductController {
         String pageSt = Integer.toString(page - 1);
         String sizeSt = Integer.toString(size);
         String url = "http://localhost:8888/web/products?page="+pageSt+"&size="+sizeSt;
-        if (categoryId != null) url += "&categoryId="+categoryId;
-        if (sex != null) url += "&sex="+sex;
-        if (search != null && search.length()>0) url+= "&search=" + search;
-        if (sort != null) {
+        if (search == null || search.length()<1){
+            if (categoryId != null && categoryId.length()>0) url += "&categoryId="+categoryId;
+            if (sex != null && sex.length()>0) url += "&sex="+sex;
+        }else {
+            url+= "&search=" + search;
+        }
+        if (sort != null && sort.length()>0) {
             url+= "&sort=" + sort;
         }else{
             url+= "&sort=date-des";

@@ -9,7 +9,7 @@
                     <div class="footer-widget">
                         <h4>SnowQueen</h4>
                         <p>SnowQueen Fashion, một sản phẩm của Vũ Lệnh Thọ
-                        <br>với Spring Framework. Phát triển ngày 25/10/2019</p>
+                        <br>với Spring Framework. Phát triển ngày 5/10/2019</p>
                         <ul>
                             <li><a href="https://www.facebook.com/vulenhtho" target="_blank"><i class="fab fa-facebook"
                                                                                 aria-hidden="true"></i></a></li>
@@ -20,17 +20,17 @@
                     <div class="footer-link">
                         <h4>Thông tin</h4>
                         <ul>
-                            <li><a href="https://www.facebook.com/vulenhtho" target="_blank"> Về chúng tôi</a></li>
-                            <li><a href="#"> Dịch vụ khách hàng</a></li>
-                            <li><a href="#"> Bản đồ</a></li>
-                            <li><a href="#"> Chính sách bảo hành</a></li>
-                            <li><a href="#"> Phương thức giao hàng</a></li>
+                            <li><a href="https://www.facebook.com/vulenhtho" target="_blank"> &nbsp;Về chúng tôi</a></li>
+                            <li><a href="#"> &nbsp;Dịch vụ khách hàng</a></li>
+                            <li><a href="#"> &nbsp;Bản đồ</a></li>
+                            <li><a href="#"> &nbsp;Chính sách bảo hành</a></li>
+                            <li><a href="#"> &nbsp;Phương thức giao hàng</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-12 col-sm-12">
                     <div class="footer-link-contact">
-                        <h4>Liên hệ</h4>
+                        <h4 id="contact">Liên hệ</h4>
                         <ul>
                             <li>
                                 <p><i class="fas fa-map-marker-alt"></i>Địa chỉ: Số 10/4 đường G, <br>Học viện Nông Nghiệp Việt Nam,

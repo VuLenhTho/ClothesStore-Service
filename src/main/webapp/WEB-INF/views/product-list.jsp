@@ -6,7 +6,7 @@
 
 <head>
     <%@include file="/common/web/head.jsp" %>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <%--<script src="https://code.jquery.com/jquery-latest.js"></script>--%>
 
 </head>
 
@@ -30,7 +30,7 @@
 <!-- End All Title Box -->
 
 <!-- Start Shop Page  -->
-<div class="shop-box-inner">
+<div class="shop-box-inner" style="font-family: Helvetica,Arial">
     <form action="<c:url value="/web/products"/>" id="formSubmit" method="get">
         <div class="container">
             <div class="row">

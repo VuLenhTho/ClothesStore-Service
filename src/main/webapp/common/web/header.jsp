@@ -111,15 +111,16 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Shop</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cửa hàng</a>
                         <ul class="dropdown-menu">
-                            <li><a href="cart.html">Giỏ hàng</a></li>
-                            <li><a href="wishlist.html">Chính sách bảo hành</a></li>
-                            <li><a href="shop-detail.html">Về chúng tôi</a></li>
+                            <li><a href="#">Giỏ hàng</a></li>
+                            <li><a href="#">Giao hàng và thanh toán</a></li>
+                            <li><a href="#">Chính sách bảo hành</a></li>
+                            <li><a href="#contact">Giới thiệu</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="service.html">Dịch vụ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dịch vụ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -171,12 +172,14 @@
 
 <!-- Start Top Search -->
 <div class="top-search" style="font-family: Helvetica,Arial">
+    <form action="<c:url value="/web/products"/>" id="formSearchHeader" method="get">
     <div class="container">
         <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-            <input type="text" class="form-control" placeholder="Search">
-            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" name="search" id="search" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
         </div>
     </div>
+    </form>
 </div>
 <!-- End Top Search -->
