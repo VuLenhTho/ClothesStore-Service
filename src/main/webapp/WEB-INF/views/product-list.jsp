@@ -179,6 +179,7 @@
                                                             <c:if test="${product.discount.size()<1}">
                                                                 <h5>${product.price}</h5>
                                                             </c:if>
+                                                            <%--<a href="/web/addToCart?productId=12"> cart</a>--%>
                                                         </div>
                                                     </div>
                                                 </a>
