@@ -1,7 +1,6 @@
 package com.vulenhtho.controller;
 
 
-import com.vulenhtho.model.request.ProductWebRequest;
 import com.vulenhtho.model.request.RoleRequest;
 import com.vulenhtho.model.request.UpdateUserRequest;
 import com.vulenhtho.model.request.UserFilterRequest;
@@ -29,9 +28,9 @@ public class UserController {
     public ModelAndView getAllUser(
             @RequestParam(defaultValue = "1", required = false) Integer page
             , @RequestParam(defaultValue = "5", required = false) Integer size
-            , @RequestParam(defaultValue = "all",required = false) String status
-            , @RequestParam(defaultValue = "all",required = false) String sex
-            , @RequestParam(defaultValue = "all",required = false) String sort
+            , @RequestParam(defaultValue = "all", required = false) String status
+            , @RequestParam(defaultValue = "all", required = false) String sex
+            , @RequestParam(defaultValue = "all", required = false) String sort
             , @RequestParam(required = false) String search) {
 
         ModelAndView mav = new ModelAndView("user-table");
@@ -41,7 +40,7 @@ public class UserController {
         if (sex != null && !sex.equals("all")) url += "&sex=" + sex;
         if (status != null && !status.equals("all")) url += "&status=" + status;
         if (sort != null && !sort.equals("all")) url += "&sort=" + sort;
-        if (search != null && search.length()>0) url += "&search=" + search;
+        if (search != null && search.length() > 0) url += "&search=" + search;
 
         UserFilterRequest users = restTemplate.getForObject(url, UserFilterRequest.class);
         mav.addObject("data", users);

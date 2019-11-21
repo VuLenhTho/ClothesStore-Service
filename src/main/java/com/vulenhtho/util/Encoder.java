@@ -1,8 +1,6 @@
 package com.vulenhtho.util;
 
-import com.vulenhtho.model.request.UserRequestApi;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.client.RestTemplate;
 
 public class Encoder {
 

@@ -19,49 +19,50 @@ import java.util.List;
 @Controller
 public class CartController {
     private RestTemplate restTemplate;
+
     @Autowired
     public CartController(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
 
     @GetMapping("/web/cart")
-    public ModelAndView cart(){
+    public ModelAndView cart() {
         return new ModelAndView("cart");
     }
 
     @GetMapping("/web/addToCart")
     public ModelAndView addToCart(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        if (req.getParameter("productId") != null){
+        if (req.getParameter("productId") != null) {
             ProductWebRequest product = restTemplate.getForObject
                     ("http://localhost:8888/web/product/"
-                            + req.getParameter("productId")
-                            ,ProductWebRequest.class);
-            if (product != null){
+                                    + req.getParameter("productId")
+                            , ProductWebRequest.class);
+            if (product != null) {
                 HttpSession session = req.getSession();
-                if (session.getAttribute("cart") == null){
+                if (session.getAttribute("cart") == null) {
                     CartResponse cartResponse = new CartResponse();
                     List<ItemResponse> itemList = new ArrayList<>();
                     ItemResponse item = new ItemResponse(
-                            product,product.getPrice(),1L);
+                            product, product.getPrice(), 1L);
                     itemList.add(item);
                     cartResponse.setItems(itemList);
-                    session.setAttribute("cart",cartResponse);
-                }else {
+                    session.setAttribute("cart", cartResponse);
+                } else {
                     CartResponse cartResponse = (CartResponse) session.getAttribute("cart");
                     List<ItemResponse> itemList = cartResponse.getItems();
 
                     boolean checkExist = false;
                     for (ItemResponse item : itemList) {
-                        if (item.getProduct().getId().equals(product.getId())){
-                            item.setAmount(item.getAmount() +1);
+                        if (item.getProduct().getId().equals(product.getId())) {
+                            item.setAmount(item.getAmount() + 1);
                             checkExist = true;
                         }
                     }
-                    if (!checkExist){
-                        ItemResponse itemResponse = new ItemResponse(product,product.getPrice(),1L);
+                    if (!checkExist) {
+                        ItemResponse itemResponse = new ItemResponse(product, product.getPrice(), 1L);
                         itemList.add(itemResponse);
                     }
-                    session.setAttribute("cart",cartResponse);
+                    session.setAttribute("cart", cartResponse);
                 }
             }
             System.out.println("vào");

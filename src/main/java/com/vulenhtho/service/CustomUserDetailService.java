@@ -30,19 +30,19 @@ public class CustomUserDetailService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         UserRequestApi user = restTemplate
-                .getForObject("http://localhost:8888/user?userName="+s, UserRequestApi.class);
+                .getForObject("http://localhost:8888/user?userName=" + s, UserRequestApi.class);
 
-        if (Objects.isNull(user)){
+        if (Objects.isNull(user)) {
             throw new UsernameNotFoundException("Didn't found user by username " + s);
         }
         Set<GrantedAuthority> authoritySet = new HashSet<>();
 
-        for (RoleRequest role: user.getRoles()) {
-            authoritySet.add(new SimpleGrantedAuthority( role.getName()));
+        for (RoleRequest role : user.getRoles()) {
+            authoritySet.add(new SimpleGrantedAuthority(role.getName()));
         }
 
-        UserDetails userDetails = new CustomUserDetail(s,user.getPassword(),authoritySet);
-        BeanUtils.copyProperties(user,userDetails);
+        UserDetails userDetails = new CustomUserDetail(s, user.getPassword(), authoritySet);
+        BeanUtils.copyProperties(user, userDetails);
         return userDetails;
     }
 }

@@ -29,14 +29,14 @@ public class ProductController {
         BriefProductFilterWebRequest trendProducts = restTemplate.getForObject("http://localhost:8888/web/products?page=0&size=8&sort=date-des&trend=true", BriefProductFilterWebRequest.class);
         BriefProductFilterWebRequest bestSaleProducts = restTemplate.getForObject("http://localhost:8888/web/products?page=0&size=8&sort=hot-des", BriefProductFilterWebRequest.class);
         for (BriefProductWebRequest p : trendProducts.getProducts()) {
-            p.setPrice(countPrice(p.getDiscount(),p.getPrice()));
+            p.setPrice(countPrice(p.getDiscount(), p.getPrice()));
         }
         for (BriefProductWebRequest p : bestSaleProducts.getProducts()) {
-            p.setPrice(countPrice(p.getDiscount(),p.getPrice()));
+            p.setPrice(countPrice(p.getDiscount(), p.getPrice()));
         }
 
-        modelAndView.addObject("trendProducts",trendProducts.getProducts());
-        modelAndView.addObject("bestSaleProducts",bestSaleProducts.getProducts());
+        modelAndView.addObject("trendProducts", trendProducts.getProducts());
+        modelAndView.addObject("bestSaleProducts", bestSaleProducts.getProducts());
 
         return modelAndView;
     }
@@ -48,32 +48,32 @@ public class ProductController {
             , @RequestParam(defaultValue = "12", required = false) Integer size
             , @RequestParam(required = false) String sex
             , @RequestParam(required = false) String search
-            , @RequestParam(required = false,defaultValue = "date-des") String sort
+            , @RequestParam(required = false, defaultValue = "date-des") String sort
     ) {
         ModelAndView modelAndView = new ModelAndView("product-list");
         String pageSt = Integer.toString(page - 1);
         String sizeSt = Integer.toString(size);
-        String url = "http://localhost:8888/web/products?page="+pageSt+"&size="+sizeSt;
-        if (search == null || search.length()<1){
-            if (categoryId != null && categoryId.length()>0) url += "&categoryId="+categoryId;
-            if (sex != null && sex.length()>0) url += "&sex="+sex;
-        }else {
-            url+= "&search=" + search;
+        String url = "http://localhost:8888/web/products?page=" + pageSt + "&size=" + sizeSt;
+        if (search == null || search.length() < 1) {
+            if (categoryId != null && categoryId.length() > 0) url += "&categoryId=" + categoryId;
+            if (sex != null && sex.length() > 0) url += "&sex=" + sex;
+        } else {
+            url += "&search=" + search;
         }
-        if (sort != null && sort.length()>0) {
-            url+= "&sort=" + sort;
-        }else{
-            url+= "&sort=date-des";
+        if (sort != null && sort.length() > 0) {
+            url += "&sort=" + sort;
+        } else {
+            url += "&sort=date-des";
         }
         BriefProductFilterWebRequest data = restTemplate.getForObject
                 (url, BriefProductFilterWebRequest.class);
         for (BriefProductWebRequest p : data.getProducts()) {
-            p.setPrice(countPrice(p.getDiscount(),p.getPrice()));
+            p.setPrice(countPrice(p.getDiscount(), p.getPrice()));
         }
-        modelAndView.addObject("data",data);
+        modelAndView.addObject("data", data);
 
-        ProductFilterWebResponse filterWebResponse = new ProductFilterWebResponse(search,sort,sex,categoryId);
-        modelAndView.addObject("filter",filterWebResponse);
+        ProductFilterWebResponse filterWebResponse = new ProductFilterWebResponse(search, sort, sex, categoryId);
+        modelAndView.addObject("filter", filterWebResponse);
         return modelAndView;
     }
 
@@ -82,10 +82,10 @@ public class ProductController {
         ModelAndView modelAndView = new ModelAndView("product-detail");
         ProductWebRequest productWebRequest = restTemplate.getForObject("http://localhost:8888/web/product/" + id, ProductWebRequest.class);
         modelAndView.addObject("product", productWebRequest);
-        modelAndView.addObject("newPrice",countPrice(productWebRequest.getDiscounts(),productWebRequest.getPrice()));
+        modelAndView.addObject("newPrice", countPrice(productWebRequest.getDiscounts(), productWebRequest.getPrice()));
         setSizeColorAmount(modelAndView, productWebRequest.getProductColorSizes());
         setPhotoList(modelAndView, productWebRequest.getPhotoList());
-        setSameProduct(modelAndView,productWebRequest.getCategory().getId());
+        setSameProduct(modelAndView, productWebRequest.getCategory().getId());
         return modelAndView;
     }
 
@@ -119,25 +119,25 @@ public class ProductController {
         modelAndView.addObject("smImg", smImg);
     }
 
-    private Long countPrice(Set<DiscountRequest> discountRequests, Long price){
+    private Long countPrice(Set<DiscountRequest> discountRequests, Long price) {
         Long discountMoney = 0L;
         Long percent = 0L;
-        if (discountRequests != null){
+        if (discountRequests != null) {
             for (DiscountRequest d : discountRequests) {
                 discountMoney += d.getAmount();
                 percent += d.getPercent();
             }
         }
 
-        return price - discountMoney - Math.round(price * ((float)percent / 100));
+        return price - discountMoney - Math.round(price * ((float) percent / 100));
     }
 
-    private void setSameProduct(ModelAndView modelAndView, Long categoryId){
+    private void setSameProduct(ModelAndView modelAndView, Long categoryId) {
         String id = String.valueOf(categoryId);
-        BriefProductFilterWebRequest request = restTemplate.getForObject("http://localhost:8888/web/products?page=0&size=7&sort=date-des&categoryId="+ id, BriefProductFilterWebRequest.class);
+        BriefProductFilterWebRequest request = restTemplate.getForObject("http://localhost:8888/web/products?page=0&size=7&sort=date-des&categoryId=" + id, BriefProductFilterWebRequest.class);
         for (BriefProductWebRequest p : request.getProducts()) {
-            p.setPrice(countPrice(p.getDiscount(),p.getPrice()));
+            p.setPrice(countPrice(p.getDiscount(), p.getPrice()));
         }
-        modelAndView.addObject("briefProducts",request.getProducts());
+        modelAndView.addObject("briefProducts", request.getProducts());
     }
 }

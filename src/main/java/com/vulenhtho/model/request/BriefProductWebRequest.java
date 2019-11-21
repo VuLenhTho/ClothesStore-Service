@@ -3,11 +3,11 @@ package com.vulenhtho.model.request;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
 import java.util.Set;
 
 
-@Getter@Setter
+@Getter
+@Setter
 public class BriefProductWebRequest {
     private Long id;
     private String name;

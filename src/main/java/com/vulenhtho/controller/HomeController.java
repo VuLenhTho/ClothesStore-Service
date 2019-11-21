@@ -1,16 +1,11 @@
 package com.vulenhtho.controller;
 
 import com.vulenhtho.model.request.RoleRequest;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Controller
@@ -28,18 +23,17 @@ public class HomeController {
     }
 
 
-
     @GetMapping("/accessDenied")
     public ModelAndView accessDenied() {
-        ModelAndView modelAndView= new ModelAndView("login");
+        ModelAndView modelAndView = new ModelAndView("login");
         String mess = "Bạn không đủ quyền truy cập vào trang này, hãy đăng nhập với tài khoản hợp lệ!";
-        modelAndView.addObject("mess",mess);
+        modelAndView.addObject("mess", mess);
         return modelAndView;
     }
 
 
     @GetMapping("/newUser")
-    public ModelAndView addUser(){
+    public ModelAndView addUser() {
         ModelAndView modelAndView = new ModelAndView("user-updateOrCreate");
 
         List<RoleRequest> roleRequests = restTemplate.getForObject("http://localhost:8888/roles", List.class);
@@ -47,7 +41,6 @@ public class HomeController {
 
         return modelAndView;
     }
-
 
 
 //    @GetMapping(value = "/accessDenied")
